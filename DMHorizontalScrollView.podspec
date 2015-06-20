@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DMHorizontalScrollView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = ""
 
   s.description  = <<-DESC
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   #
 
   # s.license      = "MIT (example)"
-  s.license        = 'MIT'
+  s.license        = { :type => "MIT", :file => "LICENSE" }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
   #
 
   # s.author             = { "caojun" => "email@address.com" }
-  s.author               = "caojun"
+  s.author               = { "caojun" => "caojengineer@126.com" }
   # Or just: s.author    = "caojun"
   # s.authors            = { "caojun" => "email@address.com" }
   # s.social_media_url   = "http://twitter.com/caojun"
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
   #
 
    s.platform     = :ios
-   s.platform     = :ios, "6.0"
+   s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/caojun/DMHorizontalScrollView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/caojun/DMHorizontalScrollView.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "DMHorizontalScrollView", "DMHorizontalScrollViewDemo", "DMHorizontalScrollView/**/*.{h,m}", "DMHorizontalScrollViewDemo/**/*.{h,m}"
-   s.source_files  = 'DMHorizontalScrollView/DMHorizontalScrollView.{h,m}'
+  s.source_files  = 'DMHorizontalScrollView/*.{h,m,xib}'
   s.exclude_files = "DMHorizontalScrollView/Exclude"
 
   # s.public_header_files = "DMHorizontalScrollView/**/*.h"
