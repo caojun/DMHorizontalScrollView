@@ -94,4 +94,9 @@
     NSLog(@"didSelected:%@", @(index));
 }
 
+- (void)horizontalScrollView:(DMHorizontalScrollView *)view didSelectAtView:(UIView *)selectView didSelectAtIndex:(NSInteger)index
+{
+    NSLog(@"didSelected:%@, didSelectAtView:%@", @(index), view);
+}
+
 @end

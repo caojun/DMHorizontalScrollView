@@ -115,6 +115,7 @@
  *  @param index 序号
  */
 - (void)horizontalScrollView:(DMHorizontalScrollView *)view didSelectAtIndex:(NSInteger)index;
+- (void)horizontalScrollView:(DMHorizontalScrollView *)view didSelectAtView:(UIView *)selectView didSelectAtIndex:(NSInteger)index;
 
 @end
 

@@ -181,6 +181,12 @@
     {
         [self.delegate horizontalScrollView:self didSelectAtIndex:btn.tag];
     }
+    
+    if ([self.delegate respondsToSelector:@selector(horizontalScrollView:didSelectAtView:didSelectAtIndex:)])
+    {
+        UIView *view = self.m_viewArray[btn.tag];
+        [self.delegate horizontalScrollView:self didSelectAtView:view didSelectAtIndex:btn.tag];
+    }
 }
 
 
