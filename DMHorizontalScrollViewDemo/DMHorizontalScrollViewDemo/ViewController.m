@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet DMHorizontalScrollView *m_horView;
 
+@property (nonatomic, weak) DMHorizontalScrollView *m_customView;
+
 @end
 
 @implementation ViewController
@@ -26,6 +28,15 @@
     view.delegate = self;
     view.dataSource = self;
     view.backgroundColor = [UIColor cyanColor];
+    
+    self.m_customView = view;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.m_horView setScrollPosition:CGPointZero isAnimation:YES];
+    
+    [self.m_customView setScrollPosition:CGPointZero isAnimation:NO];
 }
 
 #pragma mark - DMHorizontalScrollViewDataSource

@@ -174,6 +174,18 @@
 }
 
 
+/**
+ *  设置显示的起始位置
+ *
+ *  @param position    位置
+ *  @param isAnimation 是否动画
+ */
+- (void)setScrollPosition:(CGPoint)position isAnimation:(BOOL)isAnimation
+{
+    [self.m_scrollView setContentOffset:position animated:isAnimation];
+}
+
+
 #pragma mark - Event
 - (void)cellClick:(UIButton *)btn
 {
