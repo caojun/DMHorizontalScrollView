@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "DMHorizontalScrollView"
   s.version      = "0.0.4"
-  s.summary      = ""
+  s.summary      = "水平滑动显示VIEW"
 
   s.description  = <<-DESC
                    A longer description of DMHorizontalScrollView in Markdown format.
